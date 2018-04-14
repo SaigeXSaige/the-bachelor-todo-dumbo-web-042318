@@ -67,7 +67,7 @@ def get_average_age_for_season(data, season)
   data.each do |key, value|
     value.each do |x|
       if key == season
-        age << x["age"].to_i
+        age << x["age"].to_f
         #binding.pry
       end
     end
