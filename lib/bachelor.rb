@@ -67,12 +67,12 @@ def get_average_age_for_season(data, season)
   data.each do |key, value|
     value.each do |x|
       if key == season
-        age << x["age"]
-        binding.pry
+        age << x["age"].to_i
+        #binding.pry
       end
     end
   end
   
-  #average = age.sum() / age.length
+  average = age.sum() / age.length
   #binding.pry
 end
